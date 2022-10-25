@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"f072_input_trig\startup_stm32f072xb.o"
+"f072_input_trig\main.o"
+"f072_input_trig\stm32f0xx_it.o"
+"f072_input_trig\stm32f0xx_hal_msp.o"
+"f072_input_trig\stm32f0xx_hal_tim.o"
+"f072_input_trig\stm32f0xx_hal_tim_ex.o"
+"f072_input_trig\stm32f0xx_hal_uart.o"
+"f072_input_trig\stm32f0xx_hal_uart_ex.o"
+"f072_input_trig\stm32f0xx_hal_rcc.o"
+"f072_input_trig\stm32f0xx_hal_rcc_ex.o"
+"f072_input_trig\stm32f0xx_hal.o"
+"f072_input_trig\stm32f0xx_hal_i2c.o"
+"f072_input_trig\stm32f0xx_hal_i2c_ex.o"
+"f072_input_trig\stm32f0xx_hal_gpio.o"
+"f072_input_trig\stm32f0xx_hal_dma.o"
+"f072_input_trig\stm32f0xx_hal_cortex.o"
+"f072_input_trig\stm32f0xx_hal_pwr.o"
+"f072_input_trig\stm32f0xx_hal_pwr_ex.o"
+"f072_input_trig\stm32f0xx_hal_flash.o"
+"f072_input_trig\stm32f0xx_hal_flash_ex.o"
+"f072_input_trig\system_stm32f0xx.o"
+--strict --scatter "f072_input_trig\f072_input_trig.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "f072_input_trig.map" -o f072_input_trig\f072_input_trig.axf
